@@ -9,6 +9,9 @@ app.use(express.json());
 
 // GET a random user
 
+app.get("/", (req, res) => {
+  res.send("Welcome bro! Explore my apis.")
+});
 app.use("/api/users", userRouter);
 
 
